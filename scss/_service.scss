@@ -1,0 +1,157 @@
+.service {
+    padding: 10px 20px;
+    margin-top: 136px;
+
+    .service_collection {
+        max-width: 1120px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .service_text1 {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 12px;
+            color: #777E90;
+            text-align: center;
+        }
+
+        .service_text2 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #23262F;
+            margin-top: 8px;
+            margin-bottom: 32px;
+        }
+
+        .service_btn {
+            width: 135px;
+            height: 48px;
+            border-radius: 90px;
+            background: #3B71FE;
+            border: 1px solid #3B71FE;
+            color: white;
+            transition: .5s;
+            cursor: pointer;
+
+            &:hover {
+                background: none;
+                color: #3B71FE;
+                border: 1px solid #3B71FE;
+                transition: .5s;
+            }
+        }
+
+        .service_card_content {
+            max-width: 1120px;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            margin-top: 92px;
+            padding: 10px 20px;
+
+            .service_cards {
+                height: 320px;
+                background: #F4F5F6;
+                border-radius: 20px;
+                padding: 64px 32px;
+
+                .bi-emoji-smile-fill,
+                .bi-lightning-charge-fill,
+                .bi-gift {
+                    font-size: 48px;
+                    color: #FA8F54;
+                }
+
+                .bi-lightning-charge-fill {
+                    color: #8BC5E5;
+                }
+
+                .bi-gift {
+                    color: #58C27D;
+                }
+
+                .service_cards_text1 {
+                    color: #23262F;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    margin-top: 32px;
+                    margin-bottom: 16px;
+                }
+
+                .service_cards_text2 {
+                    max-width: 260px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #777E90;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1020px) {
+    .service {
+        .service_collection {
+            .service_card_content {
+                grid-gap: 20px;
+
+                .service_cards {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:880px) {
+    .service {
+        .service_collection {
+            .service_card_content {
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .service {
+        .service_collection {
+            .service_card_content {
+                grid-template-columns: 1fr;
+
+                .service_cards {
+                    width: 100%;
+
+                    .service_cards_text2 {
+                        max-width: 650px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:530px) {
+    .service {
+        .service_collection {
+            .service_card_content {
+                grid-template-columns: 1fr;
+                padding: 10px;
+
+                .service_cards {
+                    padding: 50px 20px 20px 20px;
+                }
+            }
+        }
+    }
+}

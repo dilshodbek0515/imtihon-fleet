@@ -1,0 +1,119 @@
+.card_collection {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 136px;
+
+    .card_collection_top {
+        max-width: 1120px;
+        display: flex;
+        justify-content: space-between;
+
+        .card_title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: -0.02em;
+            color: #23262F;
+            max-width: 350px;
+
+            span {
+                color: #777E90;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: -0.01em;
+            }
+        }
+
+        .cad_arrow {
+            display: flex;
+            gap: 20px;
+
+            .bi-arrow-left-circle,
+            .bi-arrow-right-circle {
+                font-size: 30px;
+                color: #777E90;
+            }
+        }
+    }
+
+    .card_wrapper {
+        max-width: 1120px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 34px;
+
+        .card_child {
+            height: 337px;
+            display: flex;
+            flex-direction: column;
+
+            .card_images {
+                width: 100%;
+                height: 100%;
+            }
+
+            .card_list1 {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 32px;
+                text-align: left;
+                color: #23262F;
+                margin-top: 21px;
+                margin-bottom: 8px;
+            }
+
+            .card_list2 {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: left;
+                color: #777E90;
+            }
+        }
+    }
+
+
+    .show_btn {
+        width: 162px;
+        height: 48px;
+        border-radius: 90px;
+        border: 2px;
+        border: 2px solid #E6E8EC;
+        color: #23262F;
+        transition: .5s;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            transition: .5s;
+        }
+    }
+}
+
+@media (max-width:830px) {
+    .card_collection {
+        margin-top: 150px;
+
+        .card_wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width:570px) {
+    .card_collection {
+        .card_wrapper {
+            grid-template-columns: 1fr;
+            grid-gap: 50px;
+
+            .card_child {
+                height: auto;
+            }
+        }
+    }
+}

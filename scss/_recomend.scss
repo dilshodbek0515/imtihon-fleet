@@ -1,0 +1,130 @@
+.rec_father {
+    padding: 10px 20px;
+
+    .rec {
+        max-width: 1120px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+
+        .recomend_text1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #23262F;
+        }
+
+        .recomend_text2 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: #9ea0a4;
+        }
+
+        .recomed_card_collection {
+            max-width: 1120px;
+            min-height: 260px;
+            margin-top: 64px;
+            overflow: auto;
+            display: flex;
+            gap: 32px;
+            padding: 0px 15px;
+
+            .recomend_child {
+                max-width: 256px;
+                min-width: 256px;
+                min-height: 260px;
+                border: 1px solid black;
+                border-radius: 24px;
+                background: #FCFCFD;
+                border: 2px solid #F4F5F6;
+                padding: 32px 20px 5px 20px;
+                display: flex;
+                flex-direction: column;
+
+                .recomend_child_text1 {
+                    width: 44px;
+                    height: 26px;
+                    background: #E6E8EC;
+                    border-radius: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                    font-weight: 700;
+                    transition: .5s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: dodgerblue;
+                        color: white;
+                        transition: .5s;
+                    }
+                }
+
+                .bi-car-front-fill {
+                    color: #777E90;
+                    font-size: 32px;
+                    margin-top: 40px;
+                    margin-bottom: 24px;
+                }
+
+                .recomend_child_text2 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    color: #23262F;
+                }
+
+                .recomend_child_text3 {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    color: #777E90;
+                }
+            }
+        }
+
+        .recomed_card_collection::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        .recomed_card_collection::-webkit-scrollbar-thumb {
+            background-color: aqua;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .rec_father {
+        .rec {
+            .recomend_text1 {
+                font-size: 30px;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .rec_father {
+        .rec {
+            .recomed_card_collection {
+                padding: 0px 10px;
+
+                .recomend_child {
+                    max-width: 200px;
+                    min-width: 200px;
+                    min-height: 220px;
+                }
+            }
+        }
+    }
+}

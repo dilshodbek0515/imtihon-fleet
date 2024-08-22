@@ -1,0 +1,123 @@
+.fleet_collection {
+    max-width: 1120px;
+    height: 776px;
+    margin: 0 auto;
+    margin-top: 136px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    .fleet_left_content {
+        .fleet_text1 {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 12px;
+            color: #777E90;
+        }
+
+        .fleet_text2 {
+            max-width: 448px;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: -0.02em;
+            color: #23262F;
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+
+        .fleet_text3 {
+            max-width: 388px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #777E90;
+            margin-bottom: 40px;
+        }
+
+        .fleet_form {
+            width: 300px;
+            height: 48px;
+            padding: 8px 8px 8px 16px;
+            border-radius: 90px;
+            border: 2px solid #E6E8EC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .fleet_input {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex: 1;
+                outline: none;
+                border: none;
+                color: #23262F;
+                font-size: 14px;
+            }
+
+            .fleet_btn {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background: #3B71FE;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid transparent;
+                transition: .5s;
+
+                &:hover {
+                    background: none;
+                    border: 1px solid #3B71FE;
+                    color: #3B71FE;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+
+    .fleet_img {
+        max-width: 640px;
+        height: 640px;
+    }
+}
+
+@media (max-width:1080px) {
+    .fleet_collection {
+        margin-top: 10px;
+
+        .fleet_img {
+            max-width: 500px;
+            height: 500px;
+        }
+    }
+}
+
+@media (max-width:950px) {
+    .fleet_collection {
+        flex-direction: column-reverse;
+        gap: 50px;
+        height: auto;
+
+        .fleet_img {
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .fleet_collection {
+        .fleet_left_content {
+            .fleet_text2 {
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

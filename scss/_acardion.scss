@@ -1,0 +1,108 @@
+.acardion {
+    margin-top: 150px;
+    padding: 10px 20px;
+
+    .acardion_collection {
+        max-width: 1440px;
+        height: 673px;
+        padding: 0px 352px 136px 352px;
+        margin: 0 auto;
+
+        .acardion_content {
+            width: 736px;
+            height: 537px;
+
+            .acardion_title {
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 56px;
+                letter-spacing: -0.02em;
+                text-align: center;
+                color: #23262F;
+            }
+
+            .acardion_btns {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                margin-bottom: 64px;
+
+                .acardion_btn {
+                    width: 78px;
+                    height: 28px;
+                    border-radius: 100px;
+                    background: none;
+                    color: #777E90;
+                    cursor: pointer;
+                    border: none;
+                    transition: .5s;
+                    margin-top: 48px;
+
+                    &:hover {
+                        transition: .5s;
+                        background-color: #23262F;
+                        color: #FCFCFD;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:1400px) {
+    .acardion {
+        .acardion_collection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .acardion {
+        .acardion_collection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+            .acardion_content {
+                .acardion_title {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:412px) {
+    .acardion {
+        .acardion_collection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+            .acardion_content {
+                width: 300px;
+
+                .acardion_btns {
+                    gap: 10px;
+                    font-size: 12px;
+                }
+
+                span {
+                    display: none;
+                }
+
+                .accordion-item {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
